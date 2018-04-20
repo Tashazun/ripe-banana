@@ -5,9 +5,14 @@ Ripe Banana
 
 For this assignment, you'l be creating a database of movie films (with reviews), movie studios, actors, reviews and reviewers.
 
-**Work in groups of 2-3 on this lab**
+## Working on this Lab
 
-### Models
+1. Work vertically. That means build the tests, route and model for one entity/resource at a time. Horizontal would be building all the mongoose models first. Don't do that, go vertical!
+1. Start with the entities/resources that don't depend on other resources: `Studio`, `Actor`, and `Reviewer`
+1. Work in groups of 2-3 on this lab
+1. Those of you in groups of 3 will probably want to three people around one computer. Split up the work (but split it vertically!) You need to set a good pace to get through the work in the allotted time.
+
+### Entities/Resources
 
 * Studio
 * Film
