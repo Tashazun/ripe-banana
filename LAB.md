@@ -80,9 +80,10 @@ For this assignment, you'l be creating a database of movie films (with reviews),
   reviewer: <review _id RI>
   review: <review-text, max-length 140 chars RS>,
   film: <film-id RI>,
-  createdAt: <created timestamp RD>,
-  updatedAt: <updated timestamp RD>
+  createdAt: <created timestamp D>,*
+  updatedAt: <updated timestamp D>*
 }
+* Use mongoose timestamp feature
 ```
 
 
