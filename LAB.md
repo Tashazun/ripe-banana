@@ -158,7 +158,7 @@ While the schemas should look like the data definitions above, these are descrip
     _id, name, company, 
     reviews: [{ 
         _id, rating, review, 
-        film: { _id, name }
+        film: { _id, title }
     }] 
 }
 ```
@@ -170,7 +170,7 @@ While the schemas should look like the data definitions above, these are descrip
 ```
 [{ 
     _id, rating, review, 
-    film: { _id, name }
+    film: { _id, title }
 }] 
 ```
 
