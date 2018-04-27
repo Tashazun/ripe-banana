@@ -5,14 +5,9 @@ Ripe Banana
 
 For this assignment, you'l be creating a database of movie films (with reviews), movie studios, actors, reviews and reviewers.
 
-## Working on this Lab
+**Work in groups of 2-3 on this lab**
 
-1. Work vertically. That means build the tests, route and model for one entity/resource at a time. Horizontal would be building all the mongoose models first. Don't do that, go vertical!
-1. Start with the entities/resources that don't depend on other resources: `Studio`, `Actor`, and `Reviewer`
-1. Work in groups of 2-3 on this lab
-1. Those of you in groups of 3 need to be careful about three people around one computer. Unless you work together at a fast pace, split up the work (but split it vertically!). You need to set a good pace to get through the work in the allotted time.
-
-### Entities/Resources
+### Models
 
 * Studio
 * Film
@@ -80,10 +75,9 @@ For this assignment, you'l be creating a database of movie films (with reviews),
   reviewer: <review _id RI>
   review: <review-text, max-length 140 chars RS>,
   film: <film-id RI>,
-  createdAt: <created timestamp D>,*
-  updatedAt: <updated timestamp D>*
+  createdAt: <created timestamp RD>,
+  updatedAt: <updated timestamp RD>
 }
-* Use mongoose timestamp feature
 ```
 
 
@@ -158,7 +152,7 @@ While the schemas should look like the data definitions above, these are descrip
     _id, name, company, 
     reviews: [{ 
         _id, rating, review, 
-        film: { _id, title }
+        film: { _id, name }
     }] 
 }
 ```
@@ -170,7 +164,7 @@ While the schemas should look like the data definitions above, these are descrip
 ```
 [{ 
     _id, rating, review, 
-    film: { _id, title }
+    film: { _id, name }
 }] 
 ```
 
